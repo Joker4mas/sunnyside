@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600;1,9..144,700&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+</head>
+<body class="font-frans ">
+  <header>
+    <!-- Navbar goes here -->
+    <nav class=" p-5  bg-sky-400 md:flex md:items-center md:justify-between">
+        <div class="flex justify-between items-center">
+              <!-- site logo -->
+          <span class="text-3xl text-white family-mono font-bold cursor-pointer">
+                sunnyside
+          </span>
+
+          <span class=" text-4xl text-white cursor-pointer mx-2 md:hidden block">
+          <ion-icon name="menu" onclick="Menu(this)" class="text-white"></ion-icon>
+          </span>
+        </div>
+
+            <!-- primary NavBar items -->
+            <ul class="items-center md:flex md:items-center z-[1]  md:z-auto md:static absolute md:text-white text-slate-700 bg-white w-full  md:w-auto  md:py-0 py-4 md:pl-0 pl-7 md:bg-opacity-0 md:opacity-100 opacity-100  top-[-400px] transition-all ease-in">
+              <li class="mx-4 my-6 md:my-0">
+              <a href="#" class="text-xl p-2  rounded-2xl hover:bg-yellow  md:hover:bg-sky-300 hover:font-bold transition duration-300">About</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+              <a href="#" class="text-xl p-2 rounded-2xl hover:bg-yellow  md:hover:bg-sky-300 hover:font-bold transition duration-300">Services</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+              <a href="#" class="text-xl p-2  rounded-2xl hover:bg-yellow  md:hover:bg-sky-300 hover:font-bold transition duration-300">Projects</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+              <a href="#" class=" text-xl p-2 rounded-2xl hover:bg-yellow md:hover:bg-sky-300  hover:font-bold transition duration-300">Contact</a>
+              </li>
+            </ul>
+        </nav>       
+      </div>
+  </header>
+
+  <!-- Hero section  -->
+  <div class="relative">
+   <img src="/images/desktop/image-header.jpg" alt="orange hero-section photo" class=" w-full object-cover ovarley">
+      <div class="top-10 absolute inset-0 md:top-32 ">
+       <h4 class="text-4xl md:-left-4 md:text-4xl text-white famliy-fraunces-600 font-bold text-center md:-mt-8">WE ARE CREATIVES</h4>    
+        <svg class="relative left-2/4 top-4 md:mt-4 md:top-16" width="36" height="114" xmlns="http://www.w3.org/2000/svg"><g stroke="#ffff" stroke-width="6" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3v100M3 95.484l15 15 15-15"/></g></svg>
+
+      </div>
+      
+      
+    <!-- <img class="" src="/images/desktop/image-header.jpg" alt=""> -->
+  </div>
+
+  <!-- main page -->
+  <div class="flex flex-col-reverse  md:flex-row w-full gap-0">
+    <div class=" bg-white w-full md:w-1/2 h-90 ">
+      <div class="flex flex-col w-2/3 justify-between align-middle items-start mx-auto mt-12 p-8 ">
+       <div>
+         <h2 class="whitespace-pre-wrap text-4xl  text-black font-bold font-space-600 mb-6">Transform your brand</h2>
+       </div>
+      <div>
+      <p class="text-sm text-slate-500 mb-6">
+        We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
+      </p>
+      </div>
+        <div id="btn-more" class="relative">
+          <button class="-left-0"><a href="#" class="font-bold ">Learn More</a></button>
+        <span>
+          <div class="w-5/5 h-2 rounded-md bg-yellow z-[]"></div>
+        </span>
+        </div>
+      </div>
+        </div>
+    <div class="bg-blue-300 w-full md:w-1/2 h-90">
+      <img src="/images/desktop/image-transform.jpg" alt="">
+    </div>
+  </div>
+
+<!-- cup-section -->
+<div class="flex flex-col md:flex-row w-full gap-0">
+  <div class="w-full md:w-1/2 h-90">
+      <img src="/images/desktop/image-stand-out.jpg" alt="">
+    </div>
+    <div class=" bg-white w-full md:w-1/2 h-90 ">
+      
+      <div class="flex flex-col w-2/3 justify-between align-middle items-start mx-auto mt-12 p-8  ">
+       <div>
+         <h2 class="whitespace-pre-wrap text-4xl text-black font-bold font-space-600 mb-6 ">Stand out to the right audience</h2>
+       </div>
+      <div>
+      <p class="text-sm text-slate-500 mb-6">
+        Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+      </p>
+      </div>
+        <div id="btn-more ">
+          <button class="-left-0"><a href="#" class="font-bold ">Learn More</a></button>
+          <span>
+          <div class="w-5/5 h-2 rounded-md bg-red-400"></div>
+        </span>
+        </div>
+      </div>
+        </div>
+    
+  </div>
+
+<!-- fruits -->
+  <div class="flex flex-col md:flex-row w-full">
+  <div class="relative w-full md:w-1/2 h-90">
+      <img src="/images/desktop/image-graphic-design.jpg" alt="">
+      <div  class="absolute bottom-8 left-28 w-3/5 text-center text-Dark-de-saturated">
+        <h2 class="font-bold text-2xl ">Graphic Design</h2>
+        <p class="p-2 text-sm">
+          Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+
+        </p>
+      </div>
+    </div>
+    <div class="relative w-full md:w-1/2 h-90 ">
+        <img src="/images/desktop/image-photography.jpg" alt="">    
+        <div class="absolute bottom-8 left-28  w-3/5 text-center text-Dark-blue ">
+          <h2 class=" font-bold text-2xl">Photography</h2>
+          <p class="p-2 text-sm">
+            Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+          </p>
+        </div>
+        </div>
+  </div>
+
+  <!-- Client testimonials section -->
+ <div id="Testimonies" class="flex flex-col w-full h-full bg-white justify-center items-center">
+  <h3 class="mx-auto mb-4 mt-8 text-3xl text-slate-400 font-bold ">Client testimonials!!</h3>
+    
+    <div class="block w-full md:flex max-w-5xl mx-auto  gap-4 p-4 ">
+      <div class=" block md:w-2/5 h-2/5 text-center bg-white/10 p-8 rounded-xl">
+        <img src="/images/image-emily.jpg" class="w-16 h-16  rounded-full mx-auto items-center mb-8">
+        <p class=" mb-8 text-md text-slate-500">
+          We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+        </p>
+        <strong>Emily R.</strong>
+        <h5 class="text-sm text-slate-400">Marketing Director</h5>
+      </div>
+
+      <div class=" block md:w-2/5 h-2/5 text-center bg-white/10 p-8 mb-4">
+        <img src="/images/image-thomas.jpg" class="w-16 h-16  rounded-full mx-auto items-center mb-8">
+        <p class=" mb-8 text-md text-slate-500">
+          We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+        </p>
+        <strong>Thomas S.</strong>
+        <h5 class="text-sm text-slate-400">Chief Operating Officer</h5>
+      </div>
+
+        <div class=" block md:w-2/5 h-2/5 text-center bg-white/10 p-8 mb-4">
+        <img src="/images/image-jennie.jpg" class="w-16 h-16  rounded-full mx-auto items-center mb-8">
+        <p class=" mb-8 text-md text-slate-500">
+          We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+        </p>
+        <strong>Jennie F.</strong>
+        <h5 class="text-sm text-slate-400">Business Owner</h5>
+      </div>
+       
+</div>
+  </div>
+
+<!-- Picture Gallery section -->
+<div class="container-fluid grid grid-cols-2 md:flex md:w-full">
+  <div>
+    <img src="/images/desktop/image-gallery-milkbottles.jpg" alt="">
+  </div>
+  <div>
+    <img src="/images/desktop/image-gallery-orange.jpg" alt="">
+  </div>
+  <div>
+    <img src="/images/desktop/image-gallery-cone.jpg" alt="">
+  </div>
+  <div>
+    <img src="/images/desktop/image-gallery-sugarcubes.jpg" alt="">
+  </div>
+</div>
+
+
+ 
+
+  
+
+  
+  <footer class="w-full h-3/5 bg-teal-300 text-Dark-moderate text-center mx-auto justify-center items-center">
+    <div class="w-2/5 h-32 mx-auto mb-0">
+      <div>
+      <h4 class="font-bold text-2xl pt-4 hover:text-white cursor-pointer">sunnyside</h4>
+    </div>
+    <div class="flex text-center mx-auto">
+    <div class="flex  justify-between items-center gap-4 text-center mt-4 mx-auto">
+      <a href="#" class="hover:text-white">About</a>
+      <a href="#" class="hover:text-white">Services</a>
+      <a href="#" class="hover:text-white">Projects</a>
+    </div>
+    </div>
+    <div id="socials" class="flex justify-center hover:text-white gap-4 p-8 mx-auto">
+      <a href="https:www.facebook.com" class=""> 
+      <img src="/images/icon-facebook.svg" alt="facebook icon" >
+      </a>
+      <a href="#" class="active:text-white">
+      <img src="/images/icon-instagram.svg" alt="instagram icon" >
+      </a>
+      <a href="#">
+      <img src="/images/icon-twitter.svg" alt="Twitter icon" >
+      </a>
+      <a href="#" class="">
+      <img src="/images/icon-pinterest.svg" alt="Pintrest image" class="hover:opacity-15" >
+      </a>
+    </div>
+    </div>
+     <div class="mx-auto  mt-4 p-4">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Samuel Ogbaje</a>.
+  </div>
+  </footer>
+  <script src="fix.js"></script>
+</body>
+</html>
